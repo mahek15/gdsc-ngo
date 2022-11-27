@@ -3,12 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="font-montserrat">
+<body class="font-[Montserrat]">
   <!-- Navbar -->
   <div class="w-full h-screen bg-no-repeat bg-cover" style="background-image:url(./images/HomePage.png)">
-    <nav class=" mx-auto bg-[#F2F3B2] fixed w-full">
+    <nav class=" mx-auto bg-[#F2F3B2] fixed w-full z-[1000]">
     <div class="flex items-center justify-around content-center py-3">
         <img src="./images/logo.png" alt="logo" class="h-[55px] w-auto">
         <div class="w-auto flex justify-center ">
@@ -98,15 +101,15 @@
 </div>
 
 <!-- Vision -->
-<div class="max-w-[80%] h-screen flex m-auto content-center items-center px-5">
-    <div>
-        <img src="./images/vision.png" alt="Vision">
+<div class="max-w-[80%] h-screen flex m-auto content-center items-center pt-5">
+    <div class="relative z-10 after:-z-[10] after:absolute after:bg-[#ABE3FF] after:content-[''] after:-left-9 after:top-[7rem] after:h-[55%] after:w-[100%] after:rounded-lg">
+        <img src="./images/vision.png" alt="Vision" class="h-[43rem] w-[50rem] object-contain">
     </div>
     <div class="flex flex-col pl-16">
         <div class="font-bold text-8xl text-[#22A8EC] pb-8">
             Our Vision
         </div>
-        <div class="font-normal text-4xl ">
+        <div class="font-normal text-3xl ">
             Empowering people by promoting human dignity, generating hope and light for all.
         </div>
     </div>
@@ -114,17 +117,19 @@
 <!-- End of vision -->
 
 <!-- Mission -->
-<div class="max-w-[80%] h-screen flex flex-row m-auto content-center items-center px-5 justify-center">
-    <div class="flex flex-col ">
+<div class="max-w-[80%] h-screen flex flex-row-reverse m-auto content-center items-center pb-5 justify-center">
+    <div >
+        <div class="relative z-10 after:-z-[10] after:absolute after:bg-[#93CB96] after:content-[''] after:-right-7 after:-top-7 after:h-[98%] after:w-[98%] after:rounded-lg">
+            <img src="./images/mission.png" alt="Mission" class="h-[20rem] w-[150rem] object-contain">
+        </div>
+    </div>
+    <div class="flex flex-col pr-16">
         <div class="font-bold text-8xl text-[#299F3C] pb-8">
             Our Mission
         </div>
-        <div class="font-normal text-4xl max-w-[80%]">
-            We strive to empower the people of Khar Danda in building networks, promoting values, preserving family bonds, enhancing the quality of life through holistic and sustainable development programs, with a specific focus on health care, women and child empowerment, education, self-reliance and leadership.
+        <div class="font-normal text-3xl ">
+            We strive to empower the people of Khar Danda in building networks, promoting values, preserving family bonds, enhancing the quality of life through, holistic and sustainable development programs, with a specific focus on health care, women and child empowerment, education, self-reliance and leadership.
         </div>
-    </div>
-    <div class=" content-center items-center">
-        <img src="./images/mission.png" alt="mission" class="w-[695.27px] h-[500px]">
     </div>
 </div>
 <!-- End of mission -->
@@ -194,7 +199,7 @@
 <!-- End of Goals -->
 
 <!-- Activities -->
-<div class="h-[500px] w-[70%] flex flex-col m-auto content-center items-center justify-center">
+<!-- <div class="h-[500px] w-[70%] flex flex-col m-auto content-center items-center justify-center">
     <span class="text-[#10C4D3] font-bold text-8xl">Our Activities</span>
     <div class="overflow-x-auto flex pt-8 ">
         <img src="./images/leftArrow.png" alt="leftArrow">
@@ -203,7 +208,46 @@
         <img src="./images/activity01.png" alt="activity" class="h-[250px] rounded-xl">
         <img src="./images/rightArrow.png" alt="rightArrow" class="fixed">
     </div>
+</div> -->
+
+<div id="controls-carousel" class="relative" data-carousel="static">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+        <img src="./images/activity01.png" alt="activity" class="h-[250px] mr-8 rounded-xl">
+        <img src="./images/activity01.png" alt="activity" class="h-[250px] mr-8 rounded-xl">
+        <img src="./images/activity01.png" alt="activity" class="h-[250px] rounded-xl">
+         <!-- Item 1 -->
+        <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="./images/activity01.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div> -->
+        <!-- Item 2 -->
+        <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+            <img src="./images/activity01.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div> -->
+        <!-- Item 3 -->
+        <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="./images/activity01.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div> -->
+        <!-- Item 4 -->
+        <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="./images/activity01.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div> -->
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
 </div>
+
 <!-- End of Activities -->
 
 <!-- Trustees section -->
@@ -265,30 +309,30 @@
 <footer class="h-auto bg-[#F2F3B2] w-full flex overflow-x-hidden p-20 ">
     <img src="./images/logo.png" alt="logo" class="h-[5rem] w-auto">
     <div class="flex flex-col px-[5rem]">
-        <span class="text-[#3D107B] font-bold text-4xl pb-3">Our Location</span>
-        <span class="font-semibold text-[#16282D] text-3xl pb-1">Chuim Community Center </span>
-        <span class="font-normal text-[#16282D] text-3xl pb-5">Nirmala Niwas,Chuim Village Road, Khar-Danda,Mumbai – 400052</span>
+        <span class="text-[#3D107B] font-bold text-3xl pb-3">Our Location</span>
+        <span class="font-semibold text-[#16282D] text-2xl pb-1">Chuim Community Center </span>
+        <span class="font-normal text-[#16282D] text-2xl pb-5">Nirmala Niwas,Chuim Village Road, Khar-Danda,Mumbai – 400052</span>
         <a href="https://www.google.co.in/maps/dir/19.0744231,72.8239116//@19.074131,72.8239706,20z" class="flex">
             <img src="./images/location.png" alt="location" class="h-8 w-8 mr-3">
-            <span class="font-medium text-3xl text-[#003D03]">View on maps</span>
+            <span class="font-medium text-2xl text-[#003D03]">View on maps</span>
         </a>
     </div>
     <div class="flex flex-col ">
-        <span class="text-[#3D107B] font-bold text-4xl pb-3">Connect with us</span>
+        <span class="text-[#3D107B] font-bold text-3xl pb-3">Connect with us</span>
         <div class="flex pb-2">
             <img src="./images/phone.png" alt="phone" class="h-8 w-8 mr-3">
-            <div class="flex flex-col text-[#16282D] font-normal text-3xl">
+            <div class="flex flex-col text-[#16282D] font-normal text-2xl">
                 <span> 022-26045789</span>
                 <span> 022-26057198</span>
             </div>
         </div>
         <div class="flex pb-2">
             <img src="./images/email.png" alt="email" class="h-8 w-8 mr-3">
-            <span class="text-[#16282D] font-normal text-3xl">chuimcommunitycenter@gmail.com</span>
+            <span class="text-[#16282D] font-normal text-2xl">chuimcommunitycenter@gmail.com</span>
         </div>
         <div class="flex">
             <img src="./images/instagram.png" alt="email" class="h-8 w-8 mr-3">
-            <span class="text-[#16282D] font-normal text-3xl">chuimcommunitycenter</span>
+            <span class="text-[#16282D] font-normal text-2xl">chuimcommunitycenter</span>
         </div>
     </div>
 </footer>
